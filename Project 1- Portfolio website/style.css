@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.box {
+    display: flex;
+}
+
+.menu {
+    background-color: black;
+    cursor: pointer;
+}
+
+.cross {
+
+    transition: transform 0.4s ease-in;
+}
+
+.open {
+    height: 99.88vh;
+    width: 20vw;
+    background-color: rgb(5, 1, 1);
+    display: flex;
+    transition: transform 0.4s ease-in;
+    z-index: 1;
+}
+
+.close {
+    display: none;
+}
+
+.pic {
+    position: absolute;
+    padding: 40px 17px;
+    width: 16vw;
+}
+
+.nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    top: 119px;
+}
+
+.items {
+    font-size: 25px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px 20px;
+    color: white;
+    list-style: none;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.itm {
+    color: white;
+    text-decoration: none;
+}
+
+.containerAfter {
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    z-index: 0;
+}
+
+.containerBefore {
+    width: 97vw;
+    height: 100vh;
+    display: flex;
+}
+
+.mypic {
+    height: 500px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.intro {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2em;
+    color: white;
+    padding-top: 130px;
+    padding-left: 175px;
+    padding-right: 25px;
+}
+
+.name {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(231, 231, 37);
+}
+
+.resume {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    height: 40px;
+    color: rgb(233, 233, 224);
+    padding: 15px 30px;
+}
+
+.box1before {
+    
+    height: 85vh;
+    width: 30vw;
+    position: relative;
+    top: 70px;
+    left: -160px;
+    display: flex;
+}
+
+.box1after {
+    height: 85vh;
+    position: relative;
+    top: 70px;
+    left: -160px;
+    display: flex;
+    width: 50vw;
+}
+
+.box2before {
+    background-color: rgb(0, 0, 0);
+    height: 85vh;
+    width: 30vw;
+    position: relative;
+    top: 70px;
+    left: -86px;
+    display: flex;
+}
+
+.box2after {
+    background-color: rgb(0, 0, 0);
+    height: 85vh;
+    width: 50vw;
+    position: relative;
+    top: 70px;
+    left: -86px;
+    display: flex;
+}
+
+.skill {
+    position: absolute;
+    padding: 5px;
+}
+
+.skills {
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.line1 {
+    position: absolute;
+    height: 41vh;
+    width: 3px;
+    background-color: rgb(47, 191, 235);
+}
+
+.html {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px 10px 5px 10px;
+    width: 50px;
+    color: white;
+    position: relative;
+    left: 3px;
+    top: 5px;
+}
+
+.htmlscore {
+    position: relative;
+    left: 60px;
+    top: -13px;
+    height: 7px;
+    width: 130px;
+    background-color: rgb(47, 191, 235);
+    animation: html 1s linear 0s;
+}
+
+.css {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px 10px 5px 10px;
+    width: 50px;
+    color: white;
+    position: relative;
+    left: 3px;
+    top: 5px;
+}
+
+.cssscore {
+    position: relative;
+    left: 60px;
+    top: -13px;
+    height: 7px;
+    width: 100px;
+    background-color: rgb(47, 191, 235);
+    animation: css 1s linear 0s;
+}
+
+.js {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px 10px 5px 10px;
+    width: 50px;
+    color: white;
+    position: relative;
+    left: 3px;
+    top: 5px;
+}
+
+.jsscore {
+    position: relative;
+    left: 60px;
+    top: -13px;
+    height: 7px;
+    width: 70px;
+    background-color: rgb(47, 191, 235);
+    animation: js 1s linear 0s;
+}
+
+.cpp {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px 10px 5px 10px;
+    width: 50px;
+    color: white;
+    position: relative;
+    left: 3px;
+    top: 5px;
+    
+}
+
+.cppscore {
+    position: relative;
+    left: 60px;
+    top: -13px;
+    height: 7px;
+    width: 60px;
+    background-color: rgb(47, 191, 235);
+    animation: cpp 1s linear 0s;
+}
+
+.c {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px 10px 5px 10px;
+    width: 50px;
+    color: white;
+    position: relative;
+    left: 3px;
+    top: 5px;
+}
+
+.cscore {
+    position: relative;
+    left: 60px;
+    top: -13px;
+    height: 7px;
+    width: 70px;
+    background-color: rgb(47, 191, 235);
+    animation: js 1s linear 0s;
+}
+
+.educ {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 250px;
+    left: -5px;
+    padding: 5px 10px 5px 10px;
+}
+
+.line2 {
+    position: absolute;
+    top: 283px;
+    height: 30vh;
+    width: 3px;
+    background-color: rgb(47, 191, 235);
+}
+
+.education {
+    position: absolute;
+    top: 288px;
+    left: 10px;
+    padding: 5px;
+    height: 125px;
+    width: 23vw;
+    color: #ffffff;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.project {
+    position: absolute;
+    padding: 5px;
+    left: 0px;
+}
+
+.proj {
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.netflix {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    padding: 5px;
+    height: 195px;
+    width: 24vw;
+    color: #ffffff;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    overflow: hidden;
+}
+
+.click {
+    color: rgb(47, 191, 235);
+}
+
+.exp {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 250px;
+    left: -5px;
+    padding: 5px 10px 5px 10px;
+}
+
+.nasa {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    padding: 5px;
+    height: 125px;
+    width: 23vw;
+    color: #ffffff;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@keyframes html {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 130px;
+    }
+}
+
+@keyframes css {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 100px;
+    }
+}
+
+@keyframes js {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 70px;
+    }
+}
+
+@keyframes cpp {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 60px;
+    }
+}
+
+.net {
+    height: 40px;
+    width: 70vw;
+    background-color: #000000;
+    position: absolute;
+    padding: 25px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(219, 4, 4);
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.ss {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: 100px;
+}
+
+.itms {
+    padding: 30px;
+}
+
+.form {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(250, 250, 250)
+}
+
+.contact-form {
+    background: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    height: 32px;
+    position: relative;
+    top: 83vh;
+    left: -270px;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+.head {
+    color: rgb(231, 231, 37);
+}
+.hi {
+    font-size: 17px;
+    padding: 5px;
+}
+
+.info {
+    font-size: 18px;
+    position: relative;
+    left: 24px;
+}
+
+.li {
+    padding: 2px 0px 2px 0px;
+}
+.list {
+    font-weight: bold;
+}
+@media (max-width: 425px) {
+    .mypic {
+        display: none;
+    }
+
+    .open {
+        width: 125px;
+        z-index: 1;
+    }
+
+    .nav {
+        width: 125px;
+    }
+
+    .containerAfter {
+        width: 65vw;
+        z-index: 0;
+    }
+    
+    .box2after {
+        position: absolute;
+        top: 185vh;
+        left: 40vw;
+        width: 55vw;
+    }
+
+    .box2before {
+        position: absolute;
+        top: 185vh;
+        left: 13vw;
+    }
+
+    .netflix {
+        overflow-y: scroll;
+    }
+
+    .social-links {
+        top: 160vh;
+        left: -134px;
+    }
+}
