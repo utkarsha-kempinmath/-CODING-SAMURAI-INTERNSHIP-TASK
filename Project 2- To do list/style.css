@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: radial-gradient(circle at bottom right, #2d033d, #09022e);
+    height: 150vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.statscontainer {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    height: 20vh;
+    width: 30vw;
+    border: 2px solid rgb(185, 188, 238);
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.details {
+    width: 15vw;
+}
+
+#progressbar {
+    height: 10px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(1, 1, 27);
+    border-radius: 5px;
+}
+
+#progress{
+    height: 10px;
+    
+    margin-top: 20px;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    transition: all 0.8s ease;
+}
+
+.statsnos {
+    height: 100px;
+    width: 100px;
+    margin-left: 25px;
+    border-radius: 50%;
+    background-color: rgb(185, 188, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(1, 1, 27);
+    font-size: 23px;
+}
+
+input {
+    height: 30px;
+    width: 30vw;
+    margin-top: 20px;
+    border: transparent;
+    border-radius: 7px;
+    background-color: rgb(185, 188, 238);
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: black;
+}
+
+button {
+    height: 34px;
+    width: 34px;
+    border: transparent;
+    border-radius: 50%;
+    background-color: rgb(185, 188, 238);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.task {
+    width: 28vw;
+    display: flex;
+}
+
+.taskItem {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 7px;
+    width: 33vw;
+    height: 3vh;
+    background-color: rgb(126, 129, 185);
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.checkbox {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: -10px;
+}
+
+.para {
+    display: flex;
+    position: relative;
+    top: 7px;
+    left: 7px;
+}
+@media (max-width: 768px) {
+    body {
+        height: 200vh;
+    }
+    
+    .statscontainer {
+        height: 35vh;
+    }
+
+    .statsnos {
+        height: 40px;
+        font-size: 18px;
+    }
+
+    #progressbar {
+        width: 90px;
+    }
+}
